@@ -59,6 +59,28 @@
                 <p>2. Adım: Kalan alt dizide minimum değer 3 bulunur, yer değiştirme yapılmaz. 2,3,5,8,7,9,4,15,6</p>
                 <p>3. Adım: Kalan alt dizide minimum değer 4 bulunur ve üçüncü elemanla (5) yer değiştirilir. 2,3,4,8,7,9,5,15,6</p>
                 <p>4. Adım: Kalan alt dizide minimum değer 5 bulunur ve dördüncü elemanla (8) yer değiştirilir. 2,3,4,5,7,9,8,15,6</p>
+                <hr>
+
+                <h1>Merge Sort Aşamaları</h1>
+                <h3><strong>Soru:</strong>[16,21,11,8,12,22] -> Merge Sort</h3>
+                <p>1.adım: Diziyi Bölme Aşamaları: [16, 21, 11]  ve  [8, 12, 22] </p> 
+                <p>Daha sonra her bir alt dizi tekrar ikiye bölünür: </p>
+                <p>[16, 21, 11] → [16] ve [21, 11]</p>
+                <p>[8, 12, 22] → [8] ve [12, 22]</p>
+                <p>Bölme işlemi alt diziler birer elemana düşene kadar devam eder: </p>
+                <p>[21, 11] → [21] ve [11]</p>
+                <p>[12, 22] → [12] ve [22]</p>
+
+                <p>2.adım: Birleştirme Aşamaları: Birleştirirken elemanlar sıralı bir şekilde birleştirilir. [21] ve [11] birleştirilir: [11, 21] </p>
+                <p>[16] ve [11, 21] birleştirilir: [11, 16, 21]</p>
+                <p>[12] ve [22] birleştirilir: [12, 22]</p>
+                <p>[8] ve [12, 22] birleştirilir: [8, 12, 22]</p>
+                <p>Son olarak [11, 16, 21] ve [8, 12, 22] birleştirilir: [8, 11, 12, 16, 21, 22]</p>
+
+                <h4><strong>Soru: Big-O Gösterimi</strong></h4>
+                <p>Bölme İşlemi: Her adımda dizi ikiye bölünür, bu işlem logn adımda tamamlanır.</p>
+                <p>Birleştirme İşlemi: Her birleştirme adımında tüm elemanlar tek tek işlenir, bu da O(n) zaman alır.</p>
+                <p>Bu nedenle, Merge Sort'un toplam karmaşıklığı: O(nlogn)</p>
             </div>
             <div class="col-sm-1"></div>
         </div>
