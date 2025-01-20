@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 text-center mt-5">
+                <h1 class="display-1">Insertion Sort</h1>
+                <h3 >[22,27,16,2,18,6] -> Insertion Sort</h3>
+                <hr>
+                <h4><strong>Soru:</strong> Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.</h4>
+                <p>1. [22, 27, 16, 2, 18, 6] Dizisinin Insertion Sort Aşamaları</p>
+                <p>Insertion Sort'ta her adımda sıralı alt dizi oluşturulur ve sırasıyla her eleman uygun konuma yerleştirilir.</p>
+                <p>Başlangıç durumu: 22,27,16,2,18,6</p>
+                <p>1.Adım: İlk iki eleman (22 ve 27) zaten sıralı kabul edilir.</p>
+                <p> <strong>22,27,16,2,18,6</strong></p>
+                <p>2.Adım: 16 elemanı sıralanmış alt dizideki yerine yerleştirilir.</p>
+                <p> <strong>16,22,27,2,18,6</strong></p>
+                <p>3.Adım: 2 elemanı sıralanmış alt dizideki yerine yerleştirilir.</p>
+                <p> <strong>2,16,22,27,18,6</strong></p>
+                <p>4.Adım: 18 elemanı sıralanmış alt dizideki yerine yerleştirilir.</p>
+                <p> <strong>2,16,18,22,27,6</strong></p>
+                <p>5.Adım: 6 elemanı sıralanmış alt dizideki yerine yerleştirilir.</p>
+                <p> <strong>2,6,16,18,22,27</strong></p>
+                <p>Sonuç: 6 elemanı sıralanmış alt dizideki yerine yerleştirilir.</p>
+                <p> <strong>2,6,16,18,22,27</strong></p>
+                <hr>
+
+
+                <h4><strong>Soru:</strong> Big-O gösterimini yazınız.</h4>
+                <p>Insertion Sort'un zaman karmaşıklığı:</p>
+                <ul style="list-style-position: inside;">
+                    <li>Best Case: O(n) (Eğer dizi zaten sıralıysa).</li>
+                    <li>Worst Case: O(n²) (Eğer dizi ters sıralıysa).</li>
+                    <li>Average Case: O(n²).</li>
+                </ul>
+                <hr>
+
+
+
+                <h4><strong>Soru:</strong> Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız</h4>
+                <p>Sıralandıktan sonra 18 sayısı dizinin ortalarına denk gelir. Bu nedenle Average Case kapsamına girer.</p>
+                <ol style="list-style-position: inside;">
+                    <li>Average case: Aradığımız sayının ortada olması</li>
+                    <li>Worst case: Aradığımız sayının sonda olması</li>
+                    <li>Best case: Aradığımız sayının dizinin en başında olması.</li>
+                </ol>
+                <hr>
+
+                <h4><strong>Soru:</strong> [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.</h4>
+                <p>Başlangıç Durumu: 7,3,5,8,2,9,4,15,6</p>
+                <p>1. Adım: Minimum değer 2 bulunur ve ilk elemanla (7) yer değiştirilir. 2,3,5,8,7,9,4,15,6</p>
+                <p>2. Adım: Kalan alt dizide minimum değer 3 bulunur, yer değiştirme yapılmaz. 2,3,5,8,7,9,4,15,6</p>
+                <p>3. Adım: Kalan alt dizide minimum değer 4 bulunur ve üçüncü elemanla (5) yer değiştirilir. 2,3,4,8,7,9,5,15,6</p>
+                <p>4. Adım: Kalan alt dizide minimum değer 5 bulunur ve dördüncü elemanla (8) yer değiştirilir. 2,3,4,5,7,9,8,15,6</p>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
